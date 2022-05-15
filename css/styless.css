@@ -317,6 +317,15 @@ background: #FFFFFF;
 .close:focus .icon-close {
   fill: var(--accent-color);
 }
+.text-modal {
+  
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: rgba(33, 33, 33, 1);
+}
 
 /* FORM */
 .form {
@@ -334,18 +343,42 @@ background: #FFFFFF;
 }
 .form-field input {
   margin: 0;
-  padding: 0;
-  border: 1px solid #21212133;
-}
+  padding: 11px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;}
+
 .form-field label {
   margin-bottom: 4px;
+  
+    font-size: 12px;
+    
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 1);
 }
 .form-field textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);;
+  color: rgba(117, 117, 117, 0.5);
 }
 textarea {
   resize: none;
-  border: 1px solid #21212133
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.form-field .submit {
+  padding: 10px 55px;
+  
+ font-size: 16px;
+    font-weight: 700;
+    line-height: 1.89;
+    letter-spacing: 0.06em;
+    text-align: center;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    background: #2196F3;
+    color: var(--white-color);
 }
 
 /* SECTION*/
@@ -847,7 +880,9 @@ a {
 .list-address {
   margin-right: 70px;
 }
-
+.join-icon {
+  margin-right: 93px;
+}
 .join {
   color: var(--white-color);
   font-family: Roboto;
@@ -861,6 +896,32 @@ a {
   text-transform: uppercase;
 }
 
+.send-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  width: 219px;
+  font-weight: 700; 
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 1);
+}
+.send input {
+  margin-right: 12px;
+  padding: 15px 16px;
+  width: 368px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: transparent;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.send-icon {
+  fill:var(--white-color);
+  margin-left: 10px;
+}
 /* Button */
 
 .button {
@@ -938,4 +999,19 @@ a {
 
 .button.secondary.five {
   min-width: 130px;
+}
+.send-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 28px;
+background-color: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border: transparent;
+  border-radius: 4px;
+  color: var(--white-color);
+  
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
 }
