@@ -315,12 +315,11 @@ nav,
 
 /* FORM */
 .form {
-  position: relative;
+  text-align: center;
   width: 448px;
   margin-left: auto;
   margin-right: auto;
- 
-}
+ }
 .form-field {
   position: relative;
   display: flex;
@@ -357,6 +356,7 @@ nav,
   border-color: var(--accent-color);
 }
 .form-label {
+  text-align: left;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
@@ -369,6 +369,12 @@ nav,
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.01em;
+}
+.textarea-field {
+  position: relative;
+    display: flex;
+    flex-direction: column;
+   margin-bottom: 20px;
 }
 .textarea {
   resize: none;
@@ -1042,9 +1048,10 @@ a {
 }
 /* КНОПКА ОТПРАВИТЬ ФОРМУ */
 .submit {
-  position: absolute;
-  transform: translateX(50%);
-  padding: 10px 16px;
+display: inline-block;
+text-align: center;
+margin-bottom: 40px;
+  padding: 10px 56px;
   min-width: 200px;
   font-size: 16px;
   font-weight: 700;
