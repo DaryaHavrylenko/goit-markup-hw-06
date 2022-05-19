@@ -265,7 +265,7 @@ nav,
 
   min-height: 581px;
   min-width: 528px;
-  padding: 15px;
+  padding: 40px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -294,10 +294,11 @@ nav,
 }
 .icon-close {
   fill: var(--black-color);
+  transition: fill 250ms var(--timing-function);
 }
 .close:hover,
 .close:focus {
-  border-color: var(--accent-color);
+  /* border-color: var(--accent-color); */
   color: var(--accent-color);
 }
 .close:hover .icon-close,
@@ -305,6 +306,8 @@ nav,
   fill: var(--accent-color);
 }
 .text-modal {
+  margin-top: 0;
+  margin-bottom: 12px;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
@@ -1050,7 +1053,7 @@ a {
 .submit {
 display: inline-block;
 text-align: center;
-margin-bottom: 40px;
+
   padding: 10px 56px;
   min-width: 200px;
   font-size: 16px;

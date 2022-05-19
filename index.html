@@ -146,10 +146,6 @@
                       href=""
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label=""
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
                       aria-label="Facebook"
                       ><svg class="social-icon"><use href="./images/icons.svg#facebook"></use></svg>
                     </a>
@@ -427,28 +423,26 @@
         <div class="send">
           <p class="send-text">Подпишитесь на рассылку</p>
           <form>
-          <input class="send-input" type="email" placeholder="E-mail" />
-          <button class="send-button" type="button">
-            Подписаться<svg class="send-icon" width="24" height="24">
-              <use href="./images/icons.svg#send"></use>
-            </svg>
-          </button>
+            <input class="send-input" type="email" placeholder="E-mail" />
+            <button class="send-button" type="button">
+              Подписаться<svg class="send-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        
         <form class="form">
           <p class="text-modal">Оставьте свои данные, мы вам перезвоним</p>
           <div class="form-field">
-              <label class="form-label" for="name">Имя</label>
-              <input class="form-input" type="text" name="name" />
-              <label class="form-icon">
-                <svg class="input-svg"><use href="./images/icons.svg#person"></use></svg>
-              </label>
-            </lable>
+            <label class="form-label" for="name">Имя</label>
+            <input class="form-input" type="text" name="name" id="name" />
+            <label class="form-icon" for="name">
+              <svg class="input-svg"><use href="./images/icons.svg#person"></use></svg>
+            </label>
           </div>
           <div class="form-field">
             <label class="form-label" for="tel">Телефон</label>
@@ -466,13 +460,21 @@
           </div>
           <div class="textarea-field">
             <label class="form-label" for="comment">Комментарий</label>
-            <textarea class="textarea" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+            <textarea
+              class="textarea"
+              name="comment"
+              id="comment"
+              rows="8"
+              placeholder="Введите текст"
+            ></textarea>
           </div>
           <div class="form-field">
-           
-            <label class="checkbox-label"> 
-              <input class="checkbox" type="checkbox" name="check" /><span class="check-icon"></span>Соглашаюсь с рассылкой и принимаю<span class="conditions">Условия договора</span></label>
-              
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" name="check" /><span class="check-icon"></span
+              >Соглашаюсь с рассылкой и принимаю<span class="conditions"
+                >Условия договора</span
+              ></label
+            >
           </div>
           <button class="submit" type="submit">Отправить</button>
         </form>
